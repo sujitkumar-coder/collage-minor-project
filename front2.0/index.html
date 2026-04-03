@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Density Anomaly Detection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h2>Crowd Density Anomaly Detection</h2>
+    <div class="status-indicator">
+        <span class="status-dot"></span>
+        <span>System Online</span>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+        <div class="glass-card stat-card">
+            <p>Total People</p>
+            <h1>752</h1>
+        </div>
+
+        <div class="glass-card stat-card">
+            <p>Current Anomalies</p>
+            <h1>03</h1>
+        </div>
+
+        <div class="glass-card stat-card">
+            <p>Detection Accuracy</p>
+            <h1>96%</h1>
+        </div>
+    </div>
+
+    <!-- CENTER PANEL -->
+    <div class="center-panel">
+        <div class="live-box">
+            <span class="live">LIVE</span>
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac" alt="Live Feed">
+            <div class="detection-box"></div>
+            <div class="video-overlay">
+                <div class="overlay-stat">
+                    <span>Zone A</span>
+                    <strong>245 people</strong>
+                </div>
+                <div class="overlay-stat">
+                    <span>Density</span>
+                    <strong style="color: var(--accent-orange);">High</strong>
+                </div>
+                <div class="overlay-stat">
+                    <span>Risk Level</span>
+                    <strong style="color: var(--accent-red);">Moderate</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-charts">
+            <div class="glass-card chart-card">
+                <h4>Density Trend</h4>
+                <canvas id="trend"></canvas>
+            </div>
+
+            <div class="glass-card chart-card">
+                <h4>Crowd Heatmap</h4>
+                <div class="heatmap"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel glass-card">
+        <h3>Anomaly Alerts</h3>
+
+        <div class="alert high">
+            High Density Detected
+            <span>2 mins ago</span>
+        </div>
+
+        <div class="alert medium">
+            Medium Density
+            <span>5 mins ago</span>
+        </div>
+
+        <div class="alert high">
+            Sudden Crowd Surge
+            <span>9 mins ago</span>
+        </div>
+        
+        <div class="alert medium">
+            Unusual Movement Pattern
+            <span>15 mins ago</span>
+        </div>
+    </div>
+
+</div>
+
+<script src="style.js"></script>
+</body>
+</html>
